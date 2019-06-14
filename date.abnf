@@ -1,0 +1,10 @@
+date                 = year sep month sep day
+year                 = 4digit                       ; 4 digit year
+month                = 2digit                       ; 2 digit month
+day                  = "0" digit1-9                    ; 01-09
+                       / ("1"/"2") digit1-9       ; 10-29
+                       / "3" %d48-49              ; 30-31
+                       / digit1-9                 ; 1-9
+digit                = %d48-57                      ; digits 0-9
+digit1-9             = %d49-57                      ; digits 1-9
+sep                  = "-" / "/" "/"                ; date component seperator

@@ -1,0 +1,10 @@
+time-24hr            = hours sep minutes sep seconds
+hours                = tetravigit
+minutes              = sexagit
+seconds              = sexagit
+
+tetravigit           = ("0"/"1") digit / "2" %d48-51; A decimal number in the range 0-23
+sexagit              = %d48-53 digit                ; A decimal number in the range 0-59
+digit                = %d48-57                      ; digits 0-9
+digit1-9             = %d49-57                      ; digits 1-9
+sep                  = "-" / ":" / "."              ; date component seperator

@@ -1,0 +1,21 @@
+{
+  "name": "learn-apg-exp",
+  "version": "1.0.0",
+  "description": "https://www.sitepoint.com/alternative-to-regular-expressions/",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js test.abnf",
+    "test-phone": "node index.js phone.abnf",
+    "test-phone-01": "node index.js phone.abnf '(333)555-1234'",
+    "test-date": "node index.js date.abnf",
+    "test-time": "node index.js time.abnf",
+    "test-timestamp": "node index.js timestamp.abnf",
+    "test-cronjob-log": "node index.js cronjob-log.abnf"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apg-exp": "^2.1.0"
+  }
+}
